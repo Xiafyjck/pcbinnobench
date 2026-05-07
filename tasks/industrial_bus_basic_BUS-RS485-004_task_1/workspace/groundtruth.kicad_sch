@@ -1,0 +1,188 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "1bb4a160-488a-4c1e-ba99-5efb43824587")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 90.17 101.6) (xy 147.32 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27522850-3ab2-4c0d-b265-8c9d2d01fb99")
+	)
+	(wire
+		(pts
+			(xy 90.17 91.44) (xy 147.32 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb897aad-cb6c-46cf-bcb9-a6aeab116445")
+	)
+	(wire
+		(pts
+			(xy 90.17 96.52) (xy 147.32 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc3225d-3d9d-41b7-8e47-c6552538fd4e")
+	)
+	(sheet
+		(at 59.69 77.47)
+		(size 30.48 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6b9359b5-0f58-4c11-95ba-8728134a125e")
+		(property "Sheetname" "stm32-uart"
+			(at 59.69 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "stm32f1.kicad_sch"
+			(at 59.69 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RX" input
+			(at 90.17 96.52 0)
+			(uuid "5b8d9df4-9a1d-4634-a4ea-fc9c3946b580")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TX" output
+			(at 90.17 91.44 0)
+			(uuid "e94c4062-05ae-40f1-a76e-503efc139db1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DE" output
+			(at 90.17 101.6 0)
+			(uuid "d512b9a9-3e8a-4ff4-8af0-5da3e3ca3cac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "groundtruth"
+				(path "/1bb4a160-488a-4c1e-ba99-5efb43824587"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 147.32 77.47)
+		(size 59.69 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f088bd62-9a3f-496c-a8d9-8fb9e1da5ede")
+		(property "Sheetname" "RS485_5V"
+			(at 147.32 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RS485_5V.kicad_sch"
+			(at 147.32 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RS485_2_RX" output
+			(at 147.32 96.52 180)
+			(uuid "a0e6a158-422a-4041-85a1-b01aee0933be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RS485_2_DE" input
+			(at 147.32 101.6 180)
+			(uuid "d98cea40-0307-4b19-9db6-4f02beebce5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RS485_2_TX" input
+			(at 147.32 91.44 180)
+			(uuid "7623cc2e-55fd-49e9-bf1e-8b609eec1935")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "groundtruth"
+				(path "/1bb4a160-488a-4c1e-ba99-5efb43824587"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,15 @@
+# Local run outputs
+runs/
+logs/
+*.dump.json
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,12 @@
+{
+  "task_id": "analog_basic_ANA-OPAMP-001_task_2",
+  "domain": "Analog",
+  "difficulty_tier": "Very hard mixed",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/analog_basic_ANA-OPAMP-001_task_2",
+  "validator": "validators/tasks/analog_basic_ana_opamp_001_task_2.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

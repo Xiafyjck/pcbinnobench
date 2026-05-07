@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is a 4-20mA current-loop sampling KiCad project. It uses a sense resistor to convert the loop current into a voltage difference, which is directly acquired differentially by an ADS1115, and a REF3033 provides the 3.3V reference. Please review whether the current design meets the measurement goals based on the project files, project notes, and `datasheets/`, and complete the necessary schematic or PCB modifications.
+
+This task requires correcting several value errors in the peripheral interface components around the ADS1115: in the current schematic, the I²C pull-up resistors are set to 100kΩ (making the I²C bus RC time constant too large and the rising edges too slow), and two decoupling capacitors at ADS1115 power/reference-related locations are set to 100µF (ineffective for high-frequency decoupling and more suited to bulk energy storage rather than high-frequency bypassing). Please change the pull-up resistor Value to 10kΩ and change the Value of these two 100µF decoupling capacitors to 100nF, modifying only the Value fields without changing component positions or footprints.

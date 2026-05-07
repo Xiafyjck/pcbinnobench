@@ -1,0 +1,5 @@
+Please directly revise the KiCad project in the current workspace.
+
+This is a 3.3V MCU + TXU0304 level translator + 5V MAX485 RS485 transceiver KiCad project. The MCU's TX/DE pass through the TXU0304 and are shifted from 3.3V to 5V to drive the MAX485 DI and DE/RE#, while the MAX485 RO passes through the TXU0304 and is shifted from 5V down to 3.3V before returning to the MCU RX. The bus side reserves a 120Ω termination and A/B failsafe bias resistors, together with TVS protection. Please review whether the current design meets the bus communication and level compatibility goals using the project files, project description, and `datasheets/`, and complete the necessary schematic or PCB modifications.
+
+This task focuses on the level compatibility path between the 3.3V and 5V domains, confirming that the MCU TX/DE/RX signals truly pass through the TXU0304 for conversion between the two voltage domains, and that there is no bypass or direct connection causing a 5V backfeed into the 3.3V MCU and creating an overvoltage risk.

@@ -1,0 +1,46 @@
+{
+  "task": "digital_interface_basic_basic_DIG-I2C-002_task_3",
+  "success": true,
+  "kicad_cli": "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+  "kicad_version": "9.0.8",
+  "converter": {
+    "name": "qlmanage",
+    "executable": "/usr/bin/qlmanage"
+  },
+  "outputs": {
+    "schematic": [
+      {
+        "page": "1",
+        "source_pdf": "page_001.pdf",
+        "output": "/Users/openpanda/Documents/PCB_Benchmark/Engineering_tasks_eval/digital_interface_basic_basic_DIG-I2C-002_task_3/workspace/renders/schematic/page_001.png",
+        "action": "generated"
+      },
+      {
+        "page": "2",
+        "source_pdf": "page_002.pdf",
+        "output": "/Users/openpanda/Documents/PCB_Benchmark/Engineering_tasks_eval/digital_interface_basic_basic_DIG-I2C-002_task_3/workspace/renders/schematic/page_002.png",
+        "action": "generated"
+      },
+      {
+        "page": "3",
+        "source_pdf": "page_003.pdf",
+        "output": "/Users/openpanda/Documents/PCB_Benchmark/Engineering_tasks_eval/digital_interface_basic_basic_DIG-I2C-002_task_3/workspace/renders/schematic/page_003.png",
+        "action": "generated"
+      },
+      {
+        "page": "4",
+        "source_pdf": "page_004.pdf",
+        "output": "/Users/openpanda/Documents/PCB_Benchmark/Engineering_tasks_eval/digital_interface_basic_basic_DIG-I2C-002_task_3/workspace/renders/schematic/page_004.png",
+        "action": "generated"
+      }
+    ],
+    "pcb": "skipped_schematic_only",
+    "pcb_3d": "skipped_schematic_only"
+  },
+  "inputs": {
+    "schematic": "/Users/openpanda/Documents/PCB_Benchmark/Engineering_tasks_eval/digital_interface_basic_basic_DIG-I2C-002_task_3/workspace/DIG-I2C-002.kicad_sch",
+    "board": "/Users/openpanda/Documents/PCB_Benchmark/Engineering_tasks_eval/digital_interface_basic_basic_DIG-I2C-002_task_3/workspace/DIG-I2C-002.kicad_pcb",
+    "schematic_page_count": 4
+  },
+  "temp_dir": null
+}

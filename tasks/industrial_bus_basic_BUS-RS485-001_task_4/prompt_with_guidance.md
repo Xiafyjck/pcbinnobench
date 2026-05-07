@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is an RS485 bus interface KiCad project based on SP3485. It uses an SP3485 transceiver, with DE and RE# driven by the same signal for transmit/receive direction switching; the A/B side includes failsafe idle bias resistors (B pulled up to VCC, A pulled down to GND), and a 120Ω termination resistor position is reserved between A/B (default NC, soldered only at physical end nodes). Please review the current design against the bus communication goal using the project files, project documentation, and `datasheets/`, then complete the necessary schematic or PCB modifications.
+
+This task needs to clean up extra silkscreen text near the PCB interface: the current PCB has two additional `gr_text` strings ("RS485-A" at about (109, 112.5), and "RS485-B" at (109, 120), both on the F.SilkS layer), which duplicate the connector's own pin labels and whose positions do not match the connector layout. Please delete these two `gr_text` strings and keep the connector's built-in silkscreen as the only source of interface labeling.

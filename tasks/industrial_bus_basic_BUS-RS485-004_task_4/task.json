@@ -1,0 +1,12 @@
+{
+  "task_id": "industrial_bus_basic_BUS-RS485-004_task_4",
+  "domain": "Industrial bus",
+  "difficulty_tier": "Hard near-miss",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/industrial_bus_basic_BUS-RS485-004_task_4",
+  "validator": "validators/tasks/industrial_bus_basic_bus_rs485_004_task_4.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

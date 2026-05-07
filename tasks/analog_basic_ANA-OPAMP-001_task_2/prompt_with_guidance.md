@@ -1,0 +1,5 @@
+Please directly revise the KiCad project in the current workspace.
+
+This is an OPA333 single-supply op-amp follower KiCad project using OPA333 as a voltage follower. The input is AC-coupled with DC bias and includes input protection diodes; power is brought in through XH254, and signal input / output can use either SMA or XH254 interfaces. Based on the project files, project description, and `datasheets/`, review whether the current design meets the measurement target, and complete the necessary schematic or PCB modification.
+
+This task requires completing the missing power connection in the input bias network: in the current schematic, the bias divider network at the op-amp input lacks the +5V power symbol (reference `power:+5V`), so the bias midpoint is not pulled up to the correct potential and the input DC operating point fails. Add a +5V power symbol to the high-potential side of this bias divider network and connect the corresponding branch properly, so that the input node can establish the expected midpoint bias.

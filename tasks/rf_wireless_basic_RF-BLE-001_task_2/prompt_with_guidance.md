@@ -1,0 +1,5 @@
+Please directly revise the KiCad project in the current workspace.
+
+This is a KiCad project for an nRF52832-based BLE minimum system board. A 5V input is reduced to 3.3V through an on-board LDO, there is an on-board PCB antenna, and SWD and UART debug/download are supported. Please use the project files, project description, and `datasheets/` to review whether the current design meets the RF and functional objectives, and complete the necessary schematic or PCB modifications.
+
+This task requires completing the feedline matching network between the nRF52832 and the PCB antenna: the schematic currently lacks a complete π-type matching network between the RF output and the PCB antenna, missing the series matching inductor (reference L1), two matching capacitors to ground (references C9 / C11), and the corresponding GND power symbols. Please add L1 (series) plus C9 / C11 (to ground on the two sides) on the feedline according to the antenna matching reference circuit in the nRF52832 datasheet to form a π-type matching network, and synchronously complete the corresponding footprints and connections on the PCB.

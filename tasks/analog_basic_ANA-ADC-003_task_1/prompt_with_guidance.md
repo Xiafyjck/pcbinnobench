@@ -1,0 +1,5 @@
+Please directly revise the KiCad project in the current workspace.
+
+This is a differential voltage sampling KiCad project using INA333, ADS1115, REF3012, and STM32F103. The whole board operates from a 3.3V single supply, and REF3012 provides a 1.2V reference. Based on the project files, project description, and `datasheets/`, review whether the current design meets the measurement target, and complete the necessary schematic or PCB modification.
+
+This task requires correcting the REF (reference) pin connection of the INA333 instrumentation amplifier: in the schematic, the INA333 REF pin is incorrectly connected directly to GND, causing the output to be unable to swing bidirectionally around the midpoint under single-supply conditions, and making it saturate to the ground rail as soon as the differential input has even slight offset. Change the REF pin to connect to the 1.2V reference net (vref) provided by REF3012, and delete the redundant GND power symbol and its wiring at that location, so that the instrumentation amplifier output can swing around the 1.2V midpoint within the ADS1115 input range.

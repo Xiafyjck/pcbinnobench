@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is a CH340C-based USB-to-UART interface KiCad project. USB D+ / D- enter the CH340C through series resistors, with ESD protection components in between; the UART side exposes TX / RX / GND / 3.3V through a header, TX / RX each have 22–100Ω in series, and a 10µF local bulk capacitor is placed near the CH340. Please review the current design against the communication goal using the project files, project documentation, and `datasheets/`, then complete the necessary schematic or PCB modifications.
+
+This task needs to add a Polyfuse on the USB VBUS path: in the current schematic, USB VBUS passes directly into the onboard power domain without an overcurrent/backfeed protection component, creating a non-self-recovering overcurrent risk during USB bus faults. Please add F1 (lib_id `Device:Polyfuse`, footprint `Fuse:Fuse_0805_2012Metric`, about (176.53, 77.47)) in the LDO sub-sheet (`ldo.kicad_sch`), in series before USB VBUS enters the onboard power rail; on the PCB, synchronously add the F1 footprint between the USB connector and the LDO (about (88.5, 112.0)).

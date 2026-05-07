@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is an RTC low-frequency crystal clock KiCad project based on an STM32 minimal system board. The board has a 32.768 kHz low-frequency crystal (Y2) and a backup battery (BT1) to build an independent RTC clock domain. Please review whether the current design meets the RTC clock stable startup and timekeeping goals based on the project files, project notes, and `datasheets/`, and complete the necessary schematic or PCB modifications.
+
+This task requires repositioning the low-frequency crystal Y2 on the PCB: Y2 is currently placed around the pushbutton SW1 / resistor R4 / capacitor C7 area (coordinates approximately (108.75, 69.75)), close to the button and power switch area, so the oscillator loop is susceptible to noise coupling. Please move Y2 to the quiet area near the STM32 oscillator pins and load capacitors C14 / C16 (reference target coordinates approximately (110.3, 60.6)), making the oscillator loop shorter and farther from button/switch noise.

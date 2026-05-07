@@ -1,0 +1,5 @@
+Please directly revise the KiCad project in the current workspace.
+
+This is a KiCad project for an nRF52832-based BLE minimum system board. A 5V input is reduced to 3.3V through an on-board LDO, there is an on-board PCB antenna, and SWD and UART debug/download are supported. Please use the project files, project description, and `datasheets/` to review whether the current design meets the RF and functional objectives, and complete the necessary schematic or PCB modifications.
+
+This task requires completing a ground via array along the RF area on the PCB: the current PCB lacks dense ground vias along and around the path from the nRF52832 RF pin to the PCB antenna, causing discontinuous ground reference that will disrupt the feedline characteristic impedance and antenna radiation pattern. Please regularly add ground vias with drill 0.3mm on both sides of the RF feedline, at the chip ground pad, and near the antenna GND edge (typical spacing better than the corresponding λ/20 scale at 2.4GHz), forming an enclosing ground via fence, with all vias connected to the main GND net.

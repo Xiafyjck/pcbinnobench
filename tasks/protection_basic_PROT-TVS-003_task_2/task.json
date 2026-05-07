@@ -1,0 +1,12 @@
+{
+  "task_id": "protection_basic_PROT-TVS-003_task_2",
+  "domain": "Protection",
+  "difficulty_tier": "Very hard failure/timeout",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/protection_basic_PROT-TVS-003_task_2",
+  "validator": "validators/tasks/protection_basic_prot_tvs_003_task_2.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

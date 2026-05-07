@@ -1,0 +1,312 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "4dabe6b3-f80e-487d-8417-2a2728088b11")
+	(paper "A4")
+	(lib_symbols)
+	(junction
+		(at 101.6 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fe7a223-8dc3-4a9e-beb7-b5ebcf450e13")
+	)
+	(junction
+		(at 101.6 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed862346-b8b1-4559-b6cc-5284919cf840")
+	)
+	(wire
+		(pts
+			(xy 101.6 55.88) (xy 187.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e5f11c-16c3-4770-9b41-2c0370764daa")
+	)
+	(wire
+		(pts
+			(xy 101.6 50.8) (xy 187.96 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "699d7291-d872-40c0-9aff-297468196908")
+	)
+	(wire
+		(pts
+			(xy 99.06 60.96) (xy 187.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b854a1-ce16-4585-bb27-f0e5cb0b494c")
+	)
+	(wire
+		(pts
+			(xy 99.06 44.45) (xy 101.6 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e4c635-1f8a-4a43-9a6b-464cce99222f")
+	)
+	(wire
+		(pts
+			(xy 99.06 50.8) (xy 101.6 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf2434f5-be5f-470a-81ce-82973f00967a")
+	)
+	(wire
+		(pts
+			(xy 99.06 55.88) (xy 101.6 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa7b8589-f13a-413c-b990-30a7a023ed2f")
+	)
+	(sheet
+		(at 101.6 16.51)
+		(size 83.82 53.34)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "340a3bf0-63cf-4238-ae8b-d966ed7e812f")
+		(property "Sheetname" "groundtruth2"
+			(at 101.6 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "groundtruth2.kicad_sch"
+			(at 101.6 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ALERT" input
+			(at 101.6 44.45 180)
+			(uuid "44dd8542-c9e2-4a83-b2e2-751d437e49a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 101.6 50.8 180)
+			(uuid "49233aa8-cb08-4fce-bd78-f9c6fe21f6d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SDA" input
+			(at 101.6 55.88 180)
+			(uuid "41fb3007-4d24-446d-a9e4-9faa8a441d9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "DIG-I2C-002"
+				(path "/4dabe6b3-f80e-487d-8417-2a2728088b11"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 16.51)
+		(size 81.28 53.34)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5b6d38c7-cc78-4c5e-8329-7f073c387687")
+		(property "Sheetname" "groundtruth1"
+			(at 17.78 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "groundtruth1.kicad_sch"
+			(at 17.78 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ALERT" input
+			(at 99.06 44.45 0)
+			(uuid "2713fe54-68b2-414f-8847-4242bab2bd5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 99.06 50.8 0)
+			(uuid "0fdbe9e4-8331-4fad-ab48-709b5ad79052")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SDA" input
+			(at 99.06 55.88 0)
+			(uuid "8101c79c-7433-475d-8aab-5deaa2110e26")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "O.S" input
+			(at 99.06 60.96 0)
+			(uuid "d0006bed-7b9d-46c0-9b6e-4ce95de27f53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "DIG-I2C-002"
+				(path "/4dabe6b3-f80e-487d-8417-2a2728088b11"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 187.96 16.51)
+		(size 88.9 53.34)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8737e003-259f-4a4e-ba6a-71573adc8abd")
+		(property "Sheetname" "groundtruth3"
+			(at 187.96 15.7984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "groundtruth3.kicad_sch"
+			(at 187.96 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 187.96 50.8 180)
+			(uuid "49980cce-d1a7-4235-bfd4-3fe429b6995b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SDA" input
+			(at 187.96 55.88 180)
+			(uuid "4bfa2acb-bfe3-4f04-be76-80cf75a27cf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "O.S" input
+			(at 187.96 60.96 180)
+			(uuid "34ca0c03-b84f-4746-8536-d98111309458")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "DIG-I2C-002"
+				(path "/4dabe6b3-f80e-487d-8417-2a2728088b11"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

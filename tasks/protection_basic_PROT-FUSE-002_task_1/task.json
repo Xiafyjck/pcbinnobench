@@ -1,0 +1,12 @@
+{
+  "task_id": "protection_basic_PROT-FUSE-002_task_1",
+  "domain": "Protection",
+  "difficulty_tier": "Hard near-miss",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/protection_basic_PROT-FUSE-002_task_1",
+  "validator": "validators/tasks/protection_basic_prot_fuse_002_task_1.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

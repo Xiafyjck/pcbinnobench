@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is a KiCad project with a 3.3V MCU + TXU0304 level translator + 5V MAX485 RS485 transceiver. The MCU's TX/DE are shifted from 3.3V to 5V by TXU0304 to drive the MAX485 DI and DE/RE#, while the MAX485 RO is shifted from 5V to 3.3V by TXU0304 and sent back to the MCU RX. The bus side reserves 120Ω termination and A/B failsafe bias resistors and includes matching TVS protection. Please review the project files, project description, and `datasheets/` to determine whether the current design meets the bus communication and level-compatibility goals, and complete any necessary schematic or PCB modifications.
+
+This task focuses on the selection of the RS485 bus-side TVS protection device, confirming that the selected TVS provides complete bidirectional clamping for the differential pair (A/B), has working-voltage margin and surge withstand capability appropriate for RS485, and that the device polarity/topology matches the differential bus protection connection.

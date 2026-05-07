@@ -1,0 +1,12 @@
+{
+  "task_id": "analog_medium_ANA-MID-004_task_4",
+  "domain": "Analog",
+  "difficulty_tier": "Very hard mixed",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/analog_medium_ANA-MID-004_task_4",
+  "validator": "validators/tasks/analog_medium_ana_mid_004_task_4.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

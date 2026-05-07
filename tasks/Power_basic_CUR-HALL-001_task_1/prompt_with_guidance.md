@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is a Hall current sensor front-end KiCad project that uses an ACS712 and OPA333 to measure positive and negative 20A current. The analog front end is powered from 5V, and its output is sent to a downstream 3.3V ADC for sampling. Please use the project files, project notes, and `datasheets/` to review whether the supply decoupling layout of the analog front end is sufficient to support stable downstream sampling, and make the necessary PCB changes.
+
+This task specifically checks the local decoupling capacitor layout for analog front-end devices such as the ACS712 and OPA333. Check whether each analog front-end IC has a decoupling capacitor placed close to its supply pin; if a decoupling capacitor is far away on the PCB from the corresponding IC supply pin, make the minimum necessary PCB change to move that decoupling capacitor right next to the corresponding IC supply pin, so that the capacitor, supply pin, and ground return form the shortest and most compact loop possible. Do not modify components, nets, or the schematic unrelated to the decoupling layout.

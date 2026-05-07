@@ -1,0 +1,12 @@
+{
+  "task_id": "digital_interface_basic_basic_DIG-UART-003_task_4",
+  "domain": "Digital interface",
+  "difficulty_tier": "Borderline / prompt-sensitive",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/digital_interface_basic_basic_DIG-UART-003_task_4",
+  "validator": "validators/tasks/digital_interface_basic_basic_dig_uart_003_task_4.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

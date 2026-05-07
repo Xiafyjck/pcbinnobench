@@ -1,0 +1,5 @@
+Please directly revise the KiCad project in the current workspace.
+
+This is a KiCad project for overcurrent/surge protection on a USB 5V input, using a unidirectional TVS (SM6T15A) plus a series fuse (F1, Device:Fuse) to protect the downstream 5V path. Please use the project files, project description, and `datasheets/` to review whether the fuse operating margin at the highest ambient temperature and actual load current is consistent with the package current-carrying capability, and complete the necessary schematic or PCB modifications.
+
+This task focuses on whether F1's current package/implementation can carry the steady-state current on the USB 5V path and meet thermal derating requirements, and whether that package is appropriate for a fuse rather than another type of SMD component. It is recommended to check whether F1's Footprint field points to a reasonable SMD fuse package series; choose a sufficiently sized standard fuse package according to the USB 5V operating current and temperature derating requirements, and synchronously replace F1's package/pad geometry in the schematic and PCB while keeping the network topology unchanged.

@@ -1,0 +1,12 @@
+{
+  "task_id": "Power_basic_CUR-SHUNT-001_task_4",
+  "domain": "Power",
+  "difficulty_tier": "Hard near-miss",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/Power_basic_CUR-SHUNT-001_task_4",
+  "validator": "validators/tasks/power_basic_cur_shunt_001_task_4.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

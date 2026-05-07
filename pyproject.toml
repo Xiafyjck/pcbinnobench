@@ -1,0 +1,9 @@
+[project]
+name = "pcbinnobench"
+version = "0.1.0"
+description = "PCBInnoBench  Forge evaluation subset"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+package = false

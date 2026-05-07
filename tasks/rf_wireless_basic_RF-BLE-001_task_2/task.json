@@ -1,0 +1,12 @@
+{
+  "task_id": "rf_wireless_basic_RF-BLE-001_task_2",
+  "domain": "RF/wireless",
+  "difficulty_tier": "Hard near-miss",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/rf_wireless_basic_RF-BLE-001_task_2",
+  "validator": "validators/tasks/rf_wireless_basic_rf_ble_001_task_2.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}

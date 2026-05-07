@@ -1,0 +1,5 @@
+Directly revise the KiCad project in the current workspace.
+
+This is an OPA333 single-supply inverting amplifier KiCad project. It uses an OPA333 as an inverting amplifier; the input is AC-coupled with DC bias, includes input signal filtering and power filtering, power is brought in through XH254, and signal input/output can use either SMA or XH254 connectors. Please review whether the current design meets the measurement goals based on the project files, project notes, and `datasheets/`, and complete the necessary schematic or PCB modifications.
+
+This task requires completing the bias component on the op amp non-inverting input: both the schematic and PCB currently lack the bias resistor that pulls the OPA333 non-inverting input pin (U1's + input) down to GND, causing that input pin to float and preventing the inverting amplifier from forming a stable operating point after assembly and power-up. Please add an 0805 resistor in the schematic and PCB, connecting U1's non-inverting input pin to GND, and synchronize the schematic labels, netlist, and PCB routing.

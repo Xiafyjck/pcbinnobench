@@ -1,0 +1,12 @@
+{
+  "task_id": "analog_basic_ANA-ADC-004_task_3",
+  "domain": "Analog",
+  "difficulty_tier": "Hard near-miss",
+  "prompt": "prompt.md",
+  "prompt_with_guidance": "prompt_with_guidance.md",
+  "workspace": "workspace",
+  "hidden_ground_truth": "evaluation/ground_truths/analog_basic_ANA-ADC-004_task_3",
+  "validator": "validators/tasks/analog_basic_ana_adc_004_task_3.py",
+  "mineru_datasheets": [],
+  "mineru_unmatched": []
+}
